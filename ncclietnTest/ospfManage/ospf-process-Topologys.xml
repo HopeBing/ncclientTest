@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply message-id="urn:uuid:e4a4199a-4cff-4dfb-b300-950f45839a44" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <data>
+    <ospfv2 xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+      <ospfv2comm>
+        <ospfSites>
+          <ospfSite>
+            <processId>100</processId>
+            <ProcessTopologys>
+              <ProcessTopology>
+                <topoName>base</topoName>
+                <defaultCost>1</defaultCost>
+                <defaultType>Type2</defaultType>
+                <importRouteMTs>
+                  <importRouteMT>
+                    <protocol>ospf</protocol>
+                    <protocolProcessId>200</protocolProcessId>
+                    <cost>1</cost>
+                    <tag>1</tag>
+                    <type>Type2</type>
+                    <routePolicyName/>
+                  </importRouteMT>
+                </importRouteMTs>
+              </ProcessTopology>
+            </ProcessTopologys>
+          </ospfSite>
+          <ospfSite>
+            <processId>200</processId>
+            <ProcessTopologys>
+              <ProcessTopology>
+                <topoName>base</topoName>
+                <maxLoadBalancing>128</maxLoadBalancing>
+                <defaultCost>1</defaultCost>
+                <defaultCostInheritMetricFlag>false</defaultCostInheritMetricFlag>
+                <defaultTag>1</defaultTag>
+                <defaultType>Type2</defaultType>
+                <preferenceMTs>
+                  <preferenceMT>
+                    <routeType>default</routeType>
+                    <preference>10</preference>
+                    <routePolicyName/>
+                  </preferenceMT>
+                  <preferenceMT>
+                    <routeType>ase</routeType>
+                    <preference>150</preference>
+                    <routePolicyName/>
+                  </preferenceMT>
+                </preferenceMTs>
+              </ProcessTopology>
+            </ProcessTopologys>
+          </ospfSite>
+        </ospfSites>
+      </ospfv2comm>
+    </ospfv2>
+  </data>
+</rpc-reply>
+

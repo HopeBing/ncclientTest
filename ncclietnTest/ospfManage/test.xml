@@ -1,0 +1,4 @@
+<filter type="subtree">
+    <ospfv2 xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+    </ospfv2>
+</filter>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+            <ifm xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <interfaces>
+                    <interface>
+                        <ifName></ifName>
+                        <ifPhyType></ifPhyType>
+                        <ifDescr></ifDescr>
+                        <isL2SwitchPort></isL2SwitchPort>
+                        <ifAdminStatus></ifAdminStatus>
+                        <ifLinkProtocol></ifLinkProtocol>
+                        <ifRouterType></ifRouterType>
+                        <ifMtu></ifMtu>
+                        <ifMac></ifMac>
+                        <ipv4Config></ipv4Config>
+                        <ipv6Config></ipv6Config>
+                    </interface>
+                </interfaces>
+            </ifm>
+        </filter>
+    </tempalte-get>
+    <tempalte-filter>
+        <filter type="subtree">
+
+        </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+        <config>
+            <ethernet xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+                <ethernetIfs>
+                    <ethernetIf>
+                        <ifName>${ifName}</ifName>
+                        <l2Enable>${l2Enable}</l2Enable>
+                    </ethernetIf>
+                </ethernetIfs>
+            </ethernet>
+            <ifm xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <interfaces>
+                    <interface>
+                        <ifName>${ifName}</ifName>
+                        <ifDescr>${ifDescr}</ifDescr>
+                        <ifAdminStatus>${ifAdminStatus}</ifAdminStatus>
+                        <ifmAm4>
+                            <addrCfgType>config</addrCfgType>
+                            <am4CfgAddrs>
+                                <am4CfgAddr>
+                                    <ifIpAddr>${ifIpAddr}</ifIpAddr>
+                                    <subnetMask>${subnetMask}</subnetMask>
+                                    <addrType>main</addrType>
+                                </am4CfgAddr>
+                            </am4CfgAddrs>
+                        </ifmAm4>
+                    </interface>
+                </interfaces>
+            </ifm>
+        </config>
+    </tempalte-create>
+
+    <tempalte-update>
+        <config>
+
+        </config>
+    </tempalte-update>
+
+    <tempalte-delete>
+        <config>
+            <ifm xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <interfaces>
+                    <interface operation="delete">
+                        <ifName>${ifName}</ifName>
+                        <ifDescr>${ifDescr}</ifDescr>
+                        <ifAdminStatus>${ifAdminStatus}</ifAdminStatus>
+                        <ifmAm4>
+                            <addrCfgType>config</addrCfgType>
+                            <am4CfgAddrs>
+                                <am4CfgAddr operation="delete">
+                                    <ifIpAddr>${ifIpAddr}</ifIpAddr>
+                                    <subnetMask>${subnetMask}</subnetMask>
+                                    <addrType>main</addrType>
+                                </am4CfgAddr>
+                            </am4CfgAddrs>
+                        </ifmAm4>
+                    </interface>
+                </interfaces>
+            </ifm>
+        </config>
+    </tempalte-delete>
+</tempalte>

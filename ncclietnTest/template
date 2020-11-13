@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+
+        </filter>
+    </tempalte-get>
+    <tempalte-filter>
+    <filter type="subtree">
+
+    </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+    <config>
+
+    </config>
+    </tempalte-create>
+
+    <tempalte-update>
+    <config>
+
+    </config>
+    </tempalte-update>
+
+    <tempalte-delete>
+    <config>
+
+    </config>
+    </tempalte-delete>
+</tempalte>

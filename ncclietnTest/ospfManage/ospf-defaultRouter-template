@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+            <ospfv2 xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+                <ospfv2comm>
+                    <ospfSites>
+                        <ospfSite>
+                            <processId></processId>
+                            <ProcessTopologys>
+                                <ProcessTopology>
+                                    <topoName></topoName>
+                                    <defaultCost></defaultCost>
+                                    <defaultTag></defaultTag>
+                                    <defaultType></defaultType>
+                                    <defaultRouteMTs>
+                                        <defaultRouteMT>
+                                            <defRoutEnableFlag></defRoutEnableFlag>
+                                            <flag></flag>
+                                            <routePolicyName/>
+                                            <delayTimer/>
+                                        </defaultRouteMT>
+                                    </defaultRouteMTs>
+                                </ProcessTopology>
+                            </ProcessTopologys>
+                        </ospfSite>
+                    </ospfSites>
+                </ospfv2comm>
+            </ospfv2>
+        </filter>
+    </tempalte-get>
+    <tempalte-filter>
+        <filter type="subtree">
+
+        </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+        <config>
+
+        </config>
+    </tempalte-create>
+
+    <tempalte-update>
+        <config>
+
+        </config>
+    </tempalte-update>
+
+    <tempalte-delete>
+        <config>
+
+        </config>
+    </tempalte-delete>
+</tempalte>

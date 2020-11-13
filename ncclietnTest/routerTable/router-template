@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+      <rm xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+        <rmbase>
+          <uniAfs>
+            <uniAf>
+              <vrfName>_public_</vrfName>
+              <afType>ipv4unicast</afType>
+              <topologys>
+                <topology>
+                  <topologyName>base</topologyName>
+                  <routes>
+                    <route>
+                      <prefix></prefix>
+                      <maskLength></maskLength>
+                      <protocolId></protocolId>
+                      <ifName></ifName>
+                      <processId></processId>
+                      <directNexthop></directNexthop>
+                      <nextHop></nextHop>
+                      <preference></preference>
+                      <cost></cost>
+                      <age></age>
+                      <state></state>
+                      <isActive></isActive>
+                    </route>
+                  </routes>
+                </topology>
+              </topologys>
+            </uniAf>
+          </uniAfs>
+        </rmbase>
+      </rm>
+    </filter>
+    </tempalte-get>
+    <tempalte-filter>
+    <filter type="subtree">
+
+    </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+    <config>
+
+    </config>
+    </tempalte-create>
+
+    <tempalte-update>
+    <config>
+
+    </config>
+    </tempalte-update>
+
+    <tempalte-delete>
+    <config>
+
+    </config>
+    </tempalte-delete>
+</tempalte>

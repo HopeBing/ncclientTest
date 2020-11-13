@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+            <bgp xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <bgpcomm>
+                    <bgpSite>
+                        <bgpEnable></bgpEnable>
+                        <asNumber></asNumber>
+                    </bgpSite>
+                    <bgpVrfs>
+                        <bgpVrf>
+                            <vrfName></vrfName>
+                            <bgpPeers>
+                                <bgpPeer>
+                                    <peerAddr></peerAddr>
+                                    <remoteAs></remoteAs>
+                                    <localIfName></localIfName>
+                                    <ebgpMaxHop></ebgpMaxHop>
+                                    <description/>
+                                </bgpPeer>
+                            </bgpPeers>
+                            <bgpVrfAFs>
+                                <bgpVrfAF>
+                                    <afType></afType>
+                                    <networkRoutes>
+                                        <networkRoute>
+                                            <networkAddress></networkAddress>
+                                            <maskLen></maskLen>
+                                            <networkPolicy></networkPolicy>
+                                        </networkRoute>
+                                    </networkRoutes>
+                                    <importRoutes>
+                                        <importRoute>
+                                            <importProtocol></importProtocol>
+                                            <importProcessId></importProcessId>
+                                            <importRoutePolicy></importRoutePolicy>
+                                        </importRoute>
+                                    </importRoutes>
+                                    <maximumLoadBalance></maximumLoadBalance>
+                                </bgpVrfAF>
+                            </bgpVrfAFs>
+                        </bgpVrf>
+                    </bgpVrfs>
+                </bgpcomm>
+            </bgp>
+        </filter>
+    </tempalte-get>
+    <tempalte-filter>
+        <filter type="subtree">
+
+        </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+        <config>
+            <bgp xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <bgpcomm>
+                    <bgpSite operation="merge">
+                        <bgpEnable>${bgpEnable}</bgpEnable>
+                        <asNumber>${asNumber}</asNumber>
+                    </bgpSite>
+                </bgpcomm>
+            </bgp>
+        </config>
+    </tempalte-create>
+
+    <tempalte-update>
+        <config>
+
+        </config>
+    </tempalte-update>
+
+    <tempalte-delete>
+        <config>
+
+        </config>
+    </tempalte-delete>
+</tempalte>

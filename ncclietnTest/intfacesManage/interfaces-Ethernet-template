@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+            <ethernet xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+                <ethernetIfs>
+                    <ethernetIf>
+                        <ifName></ifName>
+                        <l2Enable></l2Enable>
+                        <l2Attribute>
+                            <linkType></linkType>
+                            <pvid></pvid>
+                            <trunkVlans></trunkVlans>
+                        </l2Attribute>
+                    </ethernetIf>
+                </ethernetIfs>
+            </ethernet>
+        </filter>
+    </tempalte-get>
+    <tempalte-filter>
+        <filter type="subtree">
+
+        </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+        <config>
+            <ethernet xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+                <ethernetIfs>
+                    <ethernetIf>
+                        <ifName>${ifName}</ifName>
+                        <l2Enable>${l2Enable}</l2Enable>
+                        <l2Attribute>
+                            <linkType>${linkType}</linkType>
+                            <pvid>${pvid}</pvid>
+                            <trunkVlans>${trunkVlans}</trunkVlans>
+                        </l2Attribute>
+                    </ethernetIf>
+                </ethernetIfs>
+            </ethernet>
+        </config>
+    </tempalte-create>
+
+    <tempalte-update>
+        <config>
+
+        </config>
+    </tempalte-update>
+
+    <tempalte-delete>
+        <config>
+            <ethernet xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+                <ethernetIfs>
+                    <ethernetIf>
+                        <ifName>${ifName}</ifName>
+                        <l2Enable>${l2Enable}</l2Enable>
+                        <l2Attribute operation="delete">
+                            <linkType>${linkType}</linkType>
+                            <pvid>${pvid}</pvid>
+                        </l2Attribute>
+                    </ethernetIf>
+                </ethernetIfs>
+            </ethernet>
+        </config>
+    </tempalte-delete>
+</tempalte>

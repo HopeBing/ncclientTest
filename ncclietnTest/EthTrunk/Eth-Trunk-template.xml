@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+            <ifmtrunk xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <TrunkIfs>
+                    <TrunkIf>
+                    </TrunkIf>
+                </TrunkIfs>
+            </ifmtrunk>
+        </filter>
+    </tempalte-get>
+    <tempalte-filter>
+        <filter type="subtree">
+
+        </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+        <config>
+            <ifmtrunk xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+                <TrunkIfs>
+                    <TrunkIf>
+                        <ifName>${ifName}</ifName>
+                        <minUpNum>${minUpNum}</minUpNum>
+                        <maxUpNum>${maxUpNum}</maxUpNum>
+                        <trunkType>EthTrunk</trunkType>
+                        <workMode>${workMode}</workMode>
+                    </TrunkIf>
+                </TrunkIfs>
+            </ifmtrunk>
+        </config>
+    </tempalte-create>
+
+    <tempalte-update>
+        <config>
+
+        </config>
+    </tempalte-update>
+
+    <tempalte-delete>
+        <config>
+            <ifmtrunk xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+                <TrunkIfs>
+                    <TrunkIf operation="delete">
+                        <ifName>${ifName}</ifName>
+                        <minUpNum>${minUpNum}</minUpNum>
+                        <maxUpNum>${maxUpNum}</maxUpNum>
+                        <trunkType>EthTrunk</trunkType>
+                        <workMode>${workMode}</workMode>
+                    </TrunkIf>
+                </TrunkIfs>
+            </ifmtrunk>
+        </config>
+    </tempalte-delete>
+</tempalte>

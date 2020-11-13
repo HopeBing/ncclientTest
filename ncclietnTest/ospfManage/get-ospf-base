@@ -1,0 +1,34 @@
+<filter type="subtree">
+    <ospfv2 xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+        <ospfv2comm>
+            <ospfSites>
+                <ospfSite>
+                <processId></processId>
+                <routerId/>
+                <vrfName></vrfName>
+                <description/>
+                <areas>
+                    <area>
+                        <areaId></areaId>
+                        <areaType></areaType>
+                        <descriptionArea/>
+                        <networks>
+                            <network>
+                                <ipAddress></ipAddress>
+                                <wildcardMask></wildcardMask>
+                                <description/>
+                            </network>
+                        </networks>
+                        <interfaces>
+                            <interface>
+                                <ifName></ifName>
+                                <networkType></networkType>
+                            </interface>
+                        </interfaces>
+                    </area>
+                </areas>
+                </ospfSite>
+            </ospfSites>
+        </ospfv2comm>
+    </ospfv2>
+</filter>

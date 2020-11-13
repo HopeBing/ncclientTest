@@ -1,0 +1,12 @@
+<ospfv2 xmlns="http://www.huawei.com/netconf/vrp" format-version="1.0" content-version="1.0">
+    <ospfv2comm>
+        <ospfSites>
+            <ospfSite>
+                <processId>${processId}</processId>
+                <routerId>${routerId}</routerId>
+                <vrfName/>
+                <description>${description}</description>
+            </ospfSite>
+        </ospfSites>
+    </ospfv2comm>
+</ospfv2>

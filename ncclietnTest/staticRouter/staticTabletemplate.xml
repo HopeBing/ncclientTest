@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tempalte>
+    <tempalte-get>
+        <filter type="subtree">
+            <staticrt xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <staticrtbase>
+                    <srRoutes>
+                        <srRoute>
+                            <vrfName/>
+                            <afType/>
+                            <topologyName/>
+                            <prefix/>
+                            <maskLength/>
+                            <ifName/>
+                            <destVrfName/>
+                            <nexthop/>
+                            <tag/>
+                            <description/>
+                        </srRoute>
+                    </srRoutes>
+                </staticrtbase>
+            </staticrt>
+        </filter>
+    </tempalte-get>
+    <tempalte-filter>
+        <filter type="subtree">
+
+        </filter>
+    </tempalte-filter>
+
+    <tempalte-create>
+        <config>
+            <staticrt xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <staticrtbase>
+                    <srRoutes>
+                        <srRoute operation="merge">
+                            <vrfName>_public_</vrfName>
+                            <afType>ipv4unicast</afType>
+                            <topologyName>base</topologyName>
+                            <prefix>${prefix}</prefix>
+                            <maskLength>${maskLength}</maskLength>
+                            <ifName>${ifName}</ifName>
+                            <destVrfName>_public_</destVrfName>
+                            <nexthop>${nexthop}</nexthop>
+                            <description>${description}</description>
+                        </srRoute>
+                    </srRoutes>
+                </staticrtbase>
+            </staticrt>
+        </config>
+
+    </tempalte-create>
+
+    <tempalte-update>
+
+    </tempalte-update>
+
+    <tempalte-delete>
+        <config>
+            <staticrt xmlns="http://www.huawei.com/netconf/vrp" content-version="1.0" format-version="1.0">
+                <staticrtbase>
+                    <srRoutes>
+                        <srRoute operation="delete">
+                            <vrfName>_public_</vrfName>
+                            <afType>ipv4unicast</afType>
+                            <topologyName>base</topologyName>
+                            <prefix>${prefix}</prefix>
+                            <maskLength>${maskLength}</maskLength>
+                            <ifName>${ifName}</ifName>
+                            <destVrfName>_public_</destVrfName>
+                            <nexthop>${nexthop}</nexthop>
+                            <description>${description}</description>
+                        </srRoute>
+                    </srRoutes>
+                </staticrtbase>
+            </staticrt>
+        </config>
+    </tempalte-delete>
+</tempalte>
